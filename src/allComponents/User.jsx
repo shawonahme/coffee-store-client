@@ -7,7 +7,7 @@ const User = () => {
     const [users,setUsers] = useState(loader)
     const handleDelete = (id)=>{
        
-        fetch(`http://localhost:5000/userInfo/${id}`,{
+        fetch(`https://coffee-store-server-3ni3.onrender.com/userInfo/${id}`,{
             method:'delete'
         })
         .then(data=>{

@@ -21,7 +21,7 @@ const SignUp = () => {
 
             const user = {userName,address,email,password,conpass,crateAt}
             
-            fetch('http://localhost:5000/userInfo',{
+            fetch('https://coffee-store-server-3ni3.onrender.com/userInfo',{
                 method:'post',
                 headers:{
                     'content-type': 'application/json'

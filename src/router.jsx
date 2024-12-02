@@ -20,12 +20,12 @@ export const router = createBrowserRouter([
         {
           path:'/',
           element: <CoffeeCards></CoffeeCards>,
-          loader: ()=> fetch('http://localhost:5000/users')
+          loader: ()=> fetch('https://coffee-store-server-3ni3.onrender.com/users')
         },
         {
           path:'/Details/:id',
           element:<Details></Details>,
-          loader: ({params})=> fetch(`http://localhost:5000/users/${params.id}`)
+          loader: ({params})=> fetch(`https://coffee-store-server-3ni3.onrender.com/users/${params.id}`)
 
           
 
@@ -34,7 +34,7 @@ export const router = createBrowserRouter([
         {
           path:'/update/:id',
           element:<UpdateCoffee></UpdateCoffee>,
-          loader:({params})=> fetch(`http://localhost:5000/users/${params.id}`)
+          loader:({params})=> fetch(`https://coffee-store-server-3ni3.onrender.com/users/${params.id}`)
         },
         {
           path:'/login',
@@ -47,7 +47,7 @@ export const router = createBrowserRouter([
         {
           path:'/users',
           element: <User></User>,
-          loader:()=> fetch('http://localhost:5000/userInfo')
+          loader:()=> fetch('https://coffee-store-server-3ni3.onrender.com/userInfo')
         }
       
   

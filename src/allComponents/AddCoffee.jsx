@@ -16,7 +16,7 @@ const AddCoffee = () => {
         const coffee_Info = {coffee_name,supplier,price,chef,taste,details,photo};
         
 
-        fetch('http://localhost:5000/users',{
+        fetch('https://coffee-store-server-3ni3.onrender.com/users',{
             method:'post',
             headers:{
                 'content-type':'application/json'

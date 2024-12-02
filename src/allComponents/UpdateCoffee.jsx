@@ -18,7 +18,7 @@ const handleUpdated = (event)=>{
   const photo = from.photo.value;
   const coffee_Info = {coffee_name,supplier,price,chef,taste,details,photo};
 
-  fetch(`http://localhost:5000/users/${_id}`,{
+  fetch(`https://coffee-store-server-3ni3.onrender.com/users/${_id}`,{
     method:'put',
     headers:{
       'content-type':'application/json'

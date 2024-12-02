@@ -8,7 +8,7 @@ const CoffeeCard = ({data,setCoffeeCard,coffeeCard}) => {
     
     const handleDelete = (_id)=>{
 
-        fetch(`http://localhost:5000/users/${_id}`,{
+        fetch(`https://coffee-store-server-3ni3.onrender.com/users/${_id}`,{
             method:'delete'
         })
         .then(res => res.json())
